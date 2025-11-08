@@ -1,0 +1,10 @@
+{
+  "output": "lunchboxsustenanceproject:seafood_chowder",
+  "output_count": 1,
+  "priority": 30,
+  "conditions": [
+    { "type": "property", "property": "fish", "min": 0.5 },
+    { "type": "tag", "tag": "c:foods/onion", "min_count": 1 },
+    { "type": "tag", "tag": "c:foods/tomato", "min_count": 1 }
+  ]
+}

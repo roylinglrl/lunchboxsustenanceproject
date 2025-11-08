@@ -1,0 +1,17 @@
+{
+  "output": "lunchboxsustenanceproject:bacon_and_eggs",
+  "output_count": 1,
+  "priority": 10,
+  "conditions": [
+    {
+      "type": "property",
+      "property": "meat",
+      "min": 1.5
+    },
+    {
+      "type": "property",
+      "property": "egg",
+      "min": 1.5
+    }
+  ]
+}

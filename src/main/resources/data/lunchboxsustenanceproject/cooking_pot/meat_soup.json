@@ -1,0 +1,9 @@
+{
+  "output": "lunchboxsustenanceproject:meat_soup",
+  "output_count": 1,
+  "priority": 0,
+  "conditions": [
+    { "type": "property", "property": "meat", "min": 3.0 },
+    { "type": "property", "property": "not_eat", "max": 0.0 }
+  ]
+}

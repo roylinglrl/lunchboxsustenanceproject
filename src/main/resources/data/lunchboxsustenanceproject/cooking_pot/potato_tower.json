@@ -1,0 +1,12 @@
+{
+  "output": "lunchboxsustenanceproject:potato_tower",
+  "output_count": 1,
+  "priority": 10,
+  "conditions": [
+    { "type": "property", "property": "monster", "max": 1 },
+    { "type": "property", "property": "not_eat", "max": 2 },
+    { "type": "property", "property": "meat", "max": 0 },
+    { "type": "item", "item": "minecraft:potato", "min_count": 1 },
+    { "type": "item", "item": "minecraft:stick", "min_count": 1 }
+  ]
+}

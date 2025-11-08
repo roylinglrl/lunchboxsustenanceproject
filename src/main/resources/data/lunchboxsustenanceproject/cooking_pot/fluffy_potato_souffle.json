@@ -1,0 +1,12 @@
+{
+  "output": "lunchboxsustenanceproject:fluffy_potato_souffle",
+  "output_count": 1,
+  "priority": 30,
+  "conditions": [
+    { "type": "property", "property": "egg", "min": 1.0 },
+    { "type": "property", "property": "milk", "min": 1.0 },
+    { "type": "property", "property": "meat", "max": 1.0 },
+    { "type": "property", "property": "not_eat", "max": 1.0 },
+    { "type": "item", "item": "minecraft:potato", "min_count": 1 }
+  ]
+}

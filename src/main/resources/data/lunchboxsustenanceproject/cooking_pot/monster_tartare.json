@@ -1,0 +1,9 @@
+{
+  "output": "lunchboxsustenanceproject:monster_tartare",
+  "output_count": 1,
+  "priority": 30,
+  "conditions": [
+    { "type": "property", "property": "monster", "min": 2.0 },
+    { "type": "property", "property": "egg", "min": 1.0 }
+  ]
+}

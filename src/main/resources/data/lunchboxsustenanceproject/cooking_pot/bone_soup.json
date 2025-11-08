@@ -1,0 +1,10 @@
+{
+  "output": "lunchboxsustenanceproject:bone_soup",
+  "output_count": 1,
+  "priority": 30,
+  "conditions": [
+    { "type": "property", "property": "not_eat", "min": 0.5,"max": 2.5 },
+    { "type": "item", "item": "minecraft:bone", "min_count": 2 },
+    { "type": "tag", "tag": "c:foods/onion", "min_count": 1 }
+  ]
+}

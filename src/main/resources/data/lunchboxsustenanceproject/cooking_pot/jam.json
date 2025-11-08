@@ -1,0 +1,27 @@
+{
+  "output": "lunchboxsustenanceproject:jam",
+  "output_count": 1,
+  "priority": 0,
+  "conditions": [
+    {
+      "type": "property",
+      "property": "fruit",
+      "min": 0.5
+    },
+    {
+      "type": "property",
+      "property": "meat",
+      "max": 0.0
+    },
+    {
+      "type": "property",
+      "property": "vegetable",
+      "max": 0.0
+    },
+    {
+      "type": "property",
+      "property": "not_eat",
+      "max": 0.0
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "output": "lunchboxsustenanceproject:stuffed_potato",
+  "output_count": 1,
+  "priority": 1,
+  "conditions": [
+    { "type": "property", "property": "vegetable", "min": 1.5 },
+    { "type": "item", "item": "minecraft:potato", "min_count": 1 }
+  ]
+}

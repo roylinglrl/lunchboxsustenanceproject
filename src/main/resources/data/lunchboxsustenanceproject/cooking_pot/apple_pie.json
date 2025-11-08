@@ -1,0 +1,17 @@
+{
+  "output": "lunchboxsustenanceproject:apple_pie",
+  "output_count": 1,
+  "priority": 1,
+  "conditions": [
+    {
+      "type": "property",
+      "property": "meat",
+      "max": 0.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:apple",
+      "min_count": 1
+    }
+  ]
+}

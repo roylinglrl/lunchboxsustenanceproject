@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:iron_ingot"
+    },
+    "B": {
+      "item": "minecraft:campfire"
+    }
+  },
+  "result": {
+    "id": "lunchboxsustenanceproject:cooking_pot",
+    "count": 1
+  }
+}

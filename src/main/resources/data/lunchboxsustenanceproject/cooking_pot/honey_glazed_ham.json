@@ -1,0 +1,22 @@
+{
+  "output": "lunchboxsustenanceproject:honey_glazed_ham",
+  "output_count": 1,
+  "priority": 4,
+  "conditions": [
+    {
+      "type": "property",
+      "property": "meat",
+      "min": 2
+    },
+    {
+      "type": "item",
+      "item": "minecraft:honey_bottle",
+      "min_count": 1
+    },
+    {
+      "type": "property",
+      "property": "not_eat",
+      "max": 0
+    }
+  ]
+}

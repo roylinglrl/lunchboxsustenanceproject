@@ -1,0 +1,11 @@
+{
+  "output": "lunchboxsustenanceproject:barnacle_sushi",
+  "output_count": 1,
+  "priority": 30,
+  "conditions": [
+    { "type": "property", "property": "egg", "min": 1 },
+    { "type": "tag", "tag": "c:foods/barnacle", "min_count": 1 },
+    { "type": "item", "item": "minecraft:dried_kelp", "min_count": 1 }
+
+  ]
+}

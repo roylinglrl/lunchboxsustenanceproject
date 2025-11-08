@@ -1,0 +1,10 @@
+{
+  "output": "lunchboxsustenanceproject:rainbow_candy",
+  "output_count": 1,
+  "priority": 12,
+  "conditions": [
+    { "type": "item", "item": "minecraft:honey_bottle", "min": 1.5 },
+    { "type": "property", "property": "magic", "min": 1 },
+    { "type": "property", "property": "monster", "max": 0 }
+  ]
+}

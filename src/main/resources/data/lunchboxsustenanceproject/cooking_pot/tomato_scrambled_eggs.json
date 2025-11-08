@@ -1,0 +1,10 @@
+{
+  "output": "lunchboxsustenanceproject:tomato_scrambled_eggs",
+  "output_count": 1,
+  "priority": 15,
+  "conditions": [
+    { "type": "property", "property": "egg", "min": 1.5 },
+    { "type": "property", "property": "vegetable", "min": 0.5 },
+    {"type": "tag","tag": "c:foods/tomato","min_count": 1}
+  ]
+}

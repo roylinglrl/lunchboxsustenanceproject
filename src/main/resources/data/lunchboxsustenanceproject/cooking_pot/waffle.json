@@ -1,0 +1,10 @@
+{
+  "output": "lunchboxsustenanceproject:waffle",
+  "output_count": 1,
+  "priority": 10,
+  "conditions": [
+    { "type": "property", "property": "egg", "min": 0.5 },
+    { "type": "property", "property": "milk", "min": 0.5 },
+    { "type": "tag", "tag": "c:foods/berry", "min_count": 1 }
+  ]
+}

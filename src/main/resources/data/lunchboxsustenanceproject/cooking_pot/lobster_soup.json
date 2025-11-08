@@ -1,0 +1,10 @@
+{
+  "output": "lunchboxsustenanceproject:lobster_soup",
+  "output_count": 1,
+  "priority": 30,
+  "conditions": [
+    { "type": "property", "property": "ice", "min": 0.5 },
+    { "type": "tag", "tag": "c:foods/lobster", "min": 1.0 }
+
+  ]
+}

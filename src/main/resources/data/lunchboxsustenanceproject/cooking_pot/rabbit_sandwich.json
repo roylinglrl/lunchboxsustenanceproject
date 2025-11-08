@@ -1,0 +1,22 @@
+{
+  "output": "lunchboxsustenanceproject:rabbit_sandwich",
+  "output_count": 1,
+  "priority": 1,
+  "conditions": [
+    {
+      "type": "property",
+      "property": "vegetable",
+      "min": 0.5
+    },
+    {
+      "type": "property",
+      "property": "cereals",
+      "min": 0.5
+    },
+    {
+      "type": "item",
+      "item": "minecraft:rabbit",
+      "min_count": 1
+    }
+  ]
+}

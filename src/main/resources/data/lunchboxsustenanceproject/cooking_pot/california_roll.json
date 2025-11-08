@@ -1,0 +1,9 @@
+{
+  "output": "lunchboxsustenanceproject:california_roll",
+  "output_count": 1,
+  "priority": 20,
+  "conditions": [
+    { "type": "property", "property": "fish", "min": 1.0 },
+    { "type": "item", "item": "minecraft:dried_kelp", "min_count": 2.0 }
+  ]
+}

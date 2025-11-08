@@ -1,0 +1,12 @@
+{
+  "output": "lunchboxsustenanceproject:ceviche",
+  "output_count": 1,
+  "priority": 20,
+  "conditions": [
+    { "type": "property", "property": "fish", "min": 2 },
+    { "type": "property", "property": "ice", "min": 0.5 },
+    { "type": "property", "property": "egg", "max": 0 },
+    { "type": "property", "property": "not_eat", "max": 0 }
+
+  ]
+}

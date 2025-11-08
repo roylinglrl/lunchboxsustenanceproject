@@ -1,0 +1,27 @@
+{
+  "output": "lunchboxsustenanceproject:meat_skewer",
+  "output_count": 1,
+  "priority": 5,
+  "conditions": [
+    {
+      "type": "property",
+      "property": "meat",
+      "min": 0.5
+    },
+    {
+      "type": "property",
+      "property": "monster",
+      "max": 1.5
+    },
+    {
+      "type": "property",
+      "property": "not_eat",
+      "max": 1.5
+    },
+    {
+      "type": "item",
+      "item": "minecraft:stick",
+      "min_count": 1
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "output": "lunchboxsustenanceproject:blaze_jelly",
+  "output_count": 1,
+  "priority": 30,
+  "conditions": [
+    { "type": "property", "property": "sugar", "min": 2.0 },
+    { "type": "property", "property": "meat", "max": 0.0 },
+    { "type": "item", "item": "minecraft:blaze_rod", "max": 0.0 }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "output": "lunchboxsustenanceproject:fresh_salsa",
+  "output_count": 1,
+  "priority": 20,
+  "conditions": [
+    { "type": "property", "property": "meat", "max": 0.0 },
+    { "type": "property", "property": "egg", "max": 0.0 },
+    { "type": "property", "property": "not_eat", "max": 0.0 },
+    { "type": "tag", "tag": "c:foods/tomato", "min_count": 1 },
+    { "type": "tag", "tag": "c:foods/onion", "min_count": 1 }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "output": "lunchboxsustenanceproject:apple_jelly",
+  "output_count": 1,
+  "priority": 20,
+  "conditions": [
+    { "type": "property", "property": "ice", "min": 0.5 },
+    { "type": "property", "property": "meat", "max": 1.0 },
+    { "type": "property", "property": "fish", "max": 0.0 },
+    { "type": "item", "item": "minecraft:apple", "min_count": 1 },
+    { "type": "item", "item": "minecraft:stick", "min_count": 1 }
+
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "output": "lunchboxsustenanceproject:meatball",
+  "output_count": 1,
+  "priority": -1,
+  "conditions": [
+    { "type": "property", "property": "meat", "min": 1.0 },
+    { "type": "property", "property": "not_eat", "max": 0.0 }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "output": "lunchboxsustenanceproject:creamed_potatoes",
+  "output_count": 1,
+  "priority": 20,
+  "conditions": [
+    { "type": "property", "property": "milk", "min": 1.0 },
+    { "type": "property", "property": "meat", "max": 0 },
+    { "type": "property", "property": "not_eat", "max": 0.0 },
+    { "type": "item", "item": "minecraft:potato", "min_count": 2 }
+  ]
+}

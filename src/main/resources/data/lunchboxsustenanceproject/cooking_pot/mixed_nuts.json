@@ -1,0 +1,10 @@
+{
+  "output": "lunchboxsustenanceproject:mixed_nuts",
+  "output_count": 1,
+  "priority": 10,
+  "conditions": [
+    { "type": "property", "property": "fruit", "min": 1.0 },
+    { "type": "property", "property": "seed", "min": 1.0 },
+    { "type": "tag", "tag": "c:foods/berry", "min_count": 1 }
+  ]
+}

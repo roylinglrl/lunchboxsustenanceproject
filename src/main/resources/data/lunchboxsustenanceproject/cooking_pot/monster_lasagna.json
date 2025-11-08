@@ -1,0 +1,8 @@
+{
+  "output": "lunchboxsustenanceproject:monster_lasagna",
+  "output_count": 1,
+  "priority": 10,
+  "conditions": [
+    { "type": "property", "property": "monster", "min": 2.0 }
+  ]
+}

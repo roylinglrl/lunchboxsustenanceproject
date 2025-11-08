@@ -1,0 +1,10 @@
+{
+  "output": "lunchboxsustenanceproject:flower_salad",
+  "output_count": 1,
+  "priority": 10,
+  "conditions": [
+    { "type": "tag", "tag": "minecraft:flowers", "min_count": 1.0 },
+    { "type": "property", "property": "vegetable", "min": 1.0 },
+    { "type": "property", "property": "sugar", "max": 0.5 }
+  ]
+}

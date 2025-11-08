@@ -1,0 +1,10 @@
+{
+  "output": "lunchboxsustenanceproject:lobster_dinner",
+  "output_count": 1,
+  "priority": 25,
+  "conditions": [
+    { "type": "property", "property": "fish", "min": 1.0 },
+    { "type": "property", "property": "meat", "min": 1.0 },
+    { "type": "tag", "tag": "c:foods/lobster", "min_count": 1.0 }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "output": "lunchboxsustenanceproject:toffee",
+  "output_count": 1,
+  "priority": 10,
+  "conditions": [
+    { "type": "property", "property": "sugar", "min": 3.0 }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "output": "lunchboxsustenanceproject:stir_fried_pork",
+  "output_count": 1,
+  "priority": 10,
+  "conditions": [
+    { "type": "property", "property": "meat", "min": 1.5 },
+    { "type": "property", "property": "vegetable", "min": 1.5 }
+  ]
+}

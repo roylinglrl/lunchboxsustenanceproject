@@ -1,0 +1,10 @@
+{
+  "output": "lunchboxsustenanceproject:surf_and_turf",
+  "output_count": 1,
+  "priority": 30,
+  "conditions": [
+    { "type": "property", "property": "meat", "min": 1.5 },
+    { "type": "property", "property": "fish", "min": 1.5 },
+    { "type": "property", "property": "ice", "max": 0 }
+  ]
+}

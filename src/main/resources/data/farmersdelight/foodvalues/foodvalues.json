@@ -1,0 +1,93 @@
+{
+  "farmersdelight:cabbage": {
+    "vegetable": 1.0
+  },
+  "farmersdelight:tomato": {
+    "fruit": 0.5,
+    "vegetable": 0.5
+  },
+  "farmersdelight:onion": {
+    "vegetable": 1.0
+  },
+  "farmersdelight:rice_panicle": {
+    "cereals": 0.5
+  },
+  "farmersdelight:rice": {
+    "cereals": 1.0
+  },
+  "farmersdelight:cabbage_seeds": {
+    "seed": 1.0
+  },
+  "farmersdelight:tomato_seeds": {
+    "seed": 1.0
+  },
+  "farmersdelight:rotten_tomato": {
+    "fruit": 1.0,
+    "monster": 1.0
+  },
+  "farmersdelight:fried_egg": {
+    "egg": 1
+  },
+  "farmersdelight:milk_bottle": {
+    "milk": 1.0,
+    "container": "minecraft:bottle"
+  },
+  "farmersdelight:wheat_dough": {
+    "cereals": 1
+  },
+  "farmersdelight:raw_pasta": {
+    "cereals": 1
+  },
+  "farmersdelight:pumpkin_slice": {
+    "vegetable": 0.5
+  },
+  "farmersdelight:cabbage_leaf": {
+    "vegetable": 0.5
+  },
+  "farmersdelight:tomato_sauce": {
+    "fruit": 1.0,
+    "vegetable": 1.0
+  },
+  "farmersdelight:minced_beef": {
+    "meat": 0.5
+  },
+  "farmersdelight:beef_patty": {
+    "meat": 0.5
+  },
+  "farmersdelight:chicken_cuts": {
+    "meat": 0.5
+  },
+  "farmersdelight:cooked_chicken_cuts": {
+    "meat": 0.5
+  },
+  "farmersdelight:bacon": {
+    "meat": 0.5
+  },
+  "farmersdelight:cooked_bacon": {
+    "meat": 0.5
+  },
+  "farmersdelight:mutton_chops": {
+    "meat": 0.5
+  },
+  "farmersdelight:cooked_mutton_chops": {
+    "meat": 0.5
+  },
+  "farmersdelight:cod_slice": {
+    "fish": 0.5
+  },
+  "farmersdelight:cooked_cod_slice": {
+    "fish": 0.5
+  },
+  "farmersdelight:salmon_slice": {
+    "fish": 0.5
+  },
+  "farmersdelight:cooked_salmon_slice": {
+    "fish": 0.5
+  },
+  "farmersdelight:ham": {
+    "meat": 1
+  },
+  "farmersdelight:smoked_ham": {
+    "meat": 1
+  }
+}

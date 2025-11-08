@@ -1,0 +1,8 @@
+{
+  "output": "lunchboxsustenanceproject:seafood_bisque",
+  "output_count": 1,
+  "priority": 10,
+  "conditions": [
+    { "type": "property", "property": "fish", "min": 2.0 }
+  ]
+}

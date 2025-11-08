@@ -1,0 +1,10 @@
+{
+  "output": "lunchboxsustenanceproject:meat_bun",
+  "output_count": 1,
+  "priority": 20,
+  "conditions": [
+    { "type": "property", "property": "meat", "min": 0.5, "max": 1.5 },
+    { "type": "property", "property": "not_eat", "max": 0 },
+    { "type": "item", "item": "minecraft:bread", "min_count": 1 }
+  ]
+}

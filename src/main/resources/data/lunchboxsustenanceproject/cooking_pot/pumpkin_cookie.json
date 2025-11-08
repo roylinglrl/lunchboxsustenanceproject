@@ -1,0 +1,9 @@
+{
+  "output": "lunchboxsustenanceproject:pumpkin_cookie",
+  "output_count": 1,
+  "priority": 10,
+  "conditions": [
+    { "type": "property", "property": "sugar", "min": 2.0 },
+    { "type": "tag", "tag": "c:pumpkin", "min_count": 1 }
+  ]
+}

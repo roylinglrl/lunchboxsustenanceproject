@@ -1,0 +1,9 @@
+{
+  "output": "lunchboxsustenanceproject:cod_dish",
+  "output_count": 1,
+  "priority": 20,
+  "conditions": [
+    { "type": "item", "item": "minecraft:cod", "min_count": 1 },
+    { "type": "item", "item": "minecraft:dried_kelp", "min_count": 1 }
+  ]
+}

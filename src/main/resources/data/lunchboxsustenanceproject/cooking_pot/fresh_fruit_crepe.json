@@ -1,0 +1,9 @@
+{
+  "output": "lunchboxsustenanceproject:fresh_fruit_crepe",
+  "output_count": 1,
+  "priority": 30,
+  "conditions": [
+    { "type": "property", "property": "fruit", "min": 1.5 },
+    { "type": "item", "item": "minecraft:honey_bottle", "min_count": 1.0 }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "output": "lunchboxsustenanceproject:fish_roll",
+  "output_count": 1,
+  "priority": 10,
+  "conditions": [
+    {
+      "type": "property",
+      "property": "fish",
+      "min": 1.0
+    },
+    {
+      "type": "property",
+      "property": "cereals",
+      "min": 1.0
+    }
+  ]
+}

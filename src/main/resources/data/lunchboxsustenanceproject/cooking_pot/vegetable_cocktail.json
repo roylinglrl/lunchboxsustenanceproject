@@ -1,0 +1,13 @@
+{
+  "output": "lunchboxsustenanceproject:vegetable_cocktail",
+  "output_count": 1,
+  "priority": 15,
+  "conditions": [
+    { "type": "property", "property": "vegetable", "min": 2.5 },
+    { "type": "property", "property": "ice", "min": 1.0 },
+    { "type": "property", "property": "meat", "max": 0.0 },
+    { "type": "property", "property": "egg", "max": 0.0 },
+    { "type": "property", "property": "not_eat", "max": 0.0 },
+    {"type": "tag","tag": "c:foods/tomato","min_count": 1}
+  ]
+}

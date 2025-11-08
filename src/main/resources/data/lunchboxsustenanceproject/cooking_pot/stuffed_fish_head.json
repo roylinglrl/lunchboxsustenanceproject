@@ -1,0 +1,9 @@
+{
+  "output": "lunchboxsustenanceproject:stuffed_fish_head",
+  "output_count": 1,
+  "priority": 26,
+  "conditions": [
+    { "type": "property", "property": "fish", "min": 1.25 },
+    { "type": "tag", "tag": "c:foods/barnacle", "min_count": 1 }
+  ]
+}

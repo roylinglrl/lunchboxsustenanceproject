@@ -1,0 +1,10 @@
+{
+  "output": "lunchboxsustenanceproject:barnacle_pita",
+  "output_count": 1,
+  "priority": 25,
+  "conditions": [
+    { "type": "property", "property": "vegetable", "min": 0.5 },
+    { "type": "tag", "tag": "c:foods/barnacle", "min_count": 1}
+
+  ]
+}

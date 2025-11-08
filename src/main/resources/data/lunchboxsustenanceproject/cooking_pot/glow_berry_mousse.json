@@ -1,0 +1,11 @@
+{
+  "output": "lunchboxsustenanceproject:glow_berry_mousse",
+  "output_count": 1,
+  "priority": 30,
+  "conditions": [
+    { "type": "property", "property": "fruit", "min": 2.0 },
+    { "type": "property", "property": "meat", "max": 0.0 },
+    { "type": "property", "property": "not_eat", "max": 0.0 },
+    { "type": "item", "item": "minecraft:glow_berries", "min_count": 2 }
+  ]
+}

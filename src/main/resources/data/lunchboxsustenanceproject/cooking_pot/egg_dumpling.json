@@ -1,0 +1,11 @@
+{
+  "output": "lunchboxsustenanceproject:egg_dumpling",
+  "output_count": 1,
+  "priority": 5,
+  "conditions": [
+    { "type": "property", "property": "meat", "min": 0.5 },
+    { "type": "property", "property": "vegetable", "min": 0.5 },
+    { "type": "property", "property": "egg", "min": 0.5 },
+    { "type": "property", "property": "not_eat", "max": 0.0 }
+  ]
+}

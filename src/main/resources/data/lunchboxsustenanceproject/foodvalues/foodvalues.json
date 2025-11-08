@@ -1,0 +1,145 @@
+{
+  "lunchboxsustenanceproject:lobster":{
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:cooked_lobster": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:barnacle": {
+    "fish": 0.25,
+    "meat": 0.25
+  },
+  "lunchboxsustenanceproject:cooked_barnacle": {
+    "fish": 0.25,
+    "meat": 0.25
+  },
+  "lunchboxsustenanceproject:butter": {
+    "milk": 1
+  },
+  "lunchboxsustenanceproject:sea_cucumber": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:cooked_sea_cucumber": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:small_halibut": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:cooked_small_halibut": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:halibut": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:cooked_halibut": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:eel": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:cooked_eel": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:tuna": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:cooked_tuna": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:pike": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:cooked_pike": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:tilapia": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:cooked_tilapia": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:herring": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:cooked_herring": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:catfish": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:cooked_catfish": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:grouper": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:cooked_grouper": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:black_seabream": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:cooked_black_seabream": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:seahorse": {
+    "fish": 0.25
+  },
+  "lunchboxsustenanceproject:cooked_seahorse": {
+    "fish": 0.25
+  },
+  "lunchboxsustenanceproject:sardine": {
+    "fish": 0.25
+  },
+  "lunchboxsustenanceproject:cooked_sardine": {
+    "fish": 0.25
+  },
+  "lunchboxsustenanceproject:silverfish": {
+    "fish": 0.25
+  },
+  "lunchboxsustenanceproject:cooked_silverfish": {
+    "fish": 0.25
+  },
+  "lunchboxsustenanceproject:bass": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:cooked_bass": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:octopus": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:cooked_octopus": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:jellyfish": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:cooked_jellyfish": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:sturgeon": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:cooked_sturgeon": {
+    "fish": 1.0
+  },
+  "lunchboxsustenanceproject:bream": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:cooked_bream": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:shrimp": {
+    "fish": 0.25
+  },
+  "lunchboxsustenanceproject:cooked_shrimp": {
+    "fish": 0.25
+  },
+  "lunchboxsustenanceproject:crab": {
+    "fish": 0.5
+  },
+  "lunchboxsustenanceproject:cooked_crab": {
+    "fish": 0.5
+  }
+}

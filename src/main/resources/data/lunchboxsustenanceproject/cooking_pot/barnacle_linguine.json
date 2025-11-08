@@ -1,0 +1,9 @@
+{
+  "output": "lunchboxsustenanceproject:barnacle_linguine",
+  "output_count": 1,
+  "priority": 30,
+  "conditions": [
+    { "type": "property", "property": "vegetable", "min": 2 },
+    { "type": "tag", "tag": "c:foods/barnacle", "min_count": 2 }
+  ]
+}

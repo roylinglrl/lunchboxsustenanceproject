@@ -1,0 +1,14 @@
+{
+  "output": "lunchboxsustenanceproject:ice_cream",
+  "output_count": 1,
+  "priority": 10,
+  "conditions": [
+    { "type": "property", "property": "sugar", "min": 0.5 },
+    { "type": "property", "property": "milk", "min": 0.5 },
+    { "type": "property", "property": "ice", "min": 0.5 },
+    { "type": "property", "property": "vegetable", "max": 0.0 },
+    { "type": "property", "property": "meat", "max": 0.0 },
+    { "type": "property", "property": "egg", "max": 0.0 },
+    { "type": "property", "property": "not_eat", "max": 0.0 }
+  ]
+}

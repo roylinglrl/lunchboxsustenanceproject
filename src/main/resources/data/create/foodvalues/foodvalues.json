@@ -1,0 +1,27 @@
+{
+  "create:honeyed_apple": {
+    "sugar": 1,
+    "fruit": 1
+  },
+  "create:wheat_flour": {
+    "cereals": 1
+  },
+  "create:dough": {
+    "cereals": 1
+  },
+  "create:pulp": {
+    "not_eat": 1
+  },
+  "create:bar_of_chocolate": {
+    "sugar": 0.5,
+    "milk": 0.5
+  },
+  "create:experience_nugget": {
+    "magic": 0.5,
+    "not_eat": 1
+  },
+  "create:honey_bucket": {
+    "sugar": 2,
+    "container": "minecraft:bucket"
+  }
+}

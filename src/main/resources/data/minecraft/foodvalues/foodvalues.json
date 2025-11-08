@@ -1,0 +1,255 @@
+{
+  "minecraft:apple": {
+    "fruit": 1.0
+  },
+  "minecraft:golden_apple":{
+    "fruit": 1.0,
+    "magic": 1.0
+  },
+  "minecraft:enchanted_golden_apple": {
+    "fruit": 1.0,
+    "magic": 2.0
+  },
+  "minecraft:melon_slice": {
+    "fruit": 0.5,
+    "sugar": 0.5
+  },
+  "minecraft:sweet_berries": {
+    "fruit": 0.5,
+    "sugar": 0.5
+  },
+  "minecraft:glow_berries": {
+    "fruit": 0.5,
+    "sugar": 0.5
+  },
+  "minecraft:chorus_fruit": {
+    "fruit": 0.5,
+    "ender": 0.5
+  },
+  "minecraft:carrot": {
+    "vegetable": 1.0
+  },
+  "minecraft:potato": {
+    "vegetable": 1.0
+  },
+  "minecraft:baked_potato": {
+    "vegetable": 1.0
+  },
+  "minecraft:poisonous_potato": {
+    "vegetable": 0.5,
+    "monster": 1.0
+  },
+  "minecraft:beetroot": {
+    "vegetable": 0.5,
+    "sugar": 0.5
+  },
+  "minecraft:dried_kelp": {
+    "vegetable": 0.5
+  },
+  "minecraft:beef": {
+    "meat": 1.0
+  },
+  "minecraft:cooked_beef": {
+    "meat": 1.0
+  },
+  "minecraft:porkchop": {
+    "meat": 1.0
+  },
+  "minecraft:cooked_porkchop": {
+    "meat": 1.0
+  },
+  "minecraft:mutton": {
+    "meat": 1.0
+  },
+  "minecraft:cooked_mutton": {
+    "meat": 1.0
+  },
+  "minecraft:chicken": {
+    "meat": 1.0
+  },
+  "minecraft:cooked_chicken": {
+    "meat": 1.0
+  },
+  "minecraft:rabbit": {
+    "meat": 0.5
+  },
+  "minecraft:cooked_rabbit": {
+    "meat": 0.5
+  },
+  "minecraft:cod": {
+    "fish": 1
+  },
+  "minecraft:cooked_cod": {
+    "fish": 1
+  },
+  "minecraft:salmon": {
+    "fish": 1
+  },
+  "minecraft:cooked_salmon": {
+    "fish": 1
+  },
+  "minecraft:tropical_fish": {
+    "fish": 1
+  },
+  "minecraft:pufferfish": {
+    "fish": 1,
+    "monster": 1
+  },
+  "minecraft:bread": {
+    "cereals": 1
+  },
+  "minecraft:rotten_flesh": {
+    "meat": 1,
+    "monster": 1
+  },
+  "minecraft:spider_eye": {
+    "meat": 0.5,
+    "monster": 0.5
+  },
+  "minecraft:milk_bucket": {
+    "milk": 1,
+    "container": "minecraft:bucket"
+  },
+  "minecraft:honey_bottle": {
+    "sugar": 1,
+    "container": "minecraft:glass_bottle"
+  },
+  "minecraft:stick": {
+    "not_eat": 1
+  },
+  "minecraft:wheat": {
+    "cereals": 1
+  },
+  "minecraft:bone": {
+    "not_eat": 1
+  },
+  "minecraft:snowball": {
+    "not_eat": 1,
+    "ice": 1
+  },
+  "minecraft:egg": {
+    "egg": 1
+  },
+  "minecraft:honeycomb": {
+    "sugar": 1
+  },
+  "minecraft:slime_ball": {
+    "not_eat": 1
+  },
+  "minecraft:blaze_rod": {
+    "not_eat": 1,
+    "magic": 1
+  },
+  "minecraft:breeze_rod": {
+    "not_eat": 1,
+    "magic": 1
+  },
+  "minecraft:nether_star": {
+    "magic": 2,
+    "not_eat": 1
+  },
+  "minecraft:sugar": {
+    "sugar": 1
+  },
+  "minecraft:rabbit_foot": {
+    "meat": 0.5,
+    "magic": 1
+  },
+  "minecraft:glistering_melon_slice": {
+    "fruit": 0.5,
+    "magic": 0.25
+  },
+  "minecraft:golden_carrot": {
+    "vegetable": 1,
+    "magic": 0.5
+  },
+  "minecraft:ender_pearl": {
+    "magic": 1,
+    "ender": 1
+  },
+  "minecraft:experience_bottle": {
+    "magic": 1,
+    "not_eat": 1
+  },
+  "minecraft:brown_mushroom": {
+    "mushroom": 1
+  },
+  "minecraft:red_mushroom": {
+    "mushroom": 1
+  },
+  "minecraft:crimson_fungus": {
+    "mushroom": 1,
+    "monster": 1
+  },
+  "minecraft:warped_fungus": {
+    "mushroom": 1,
+    "monster": 1
+  },
+  "minecraft:fern": {
+    "vegetable": 0.5
+  },
+  "minecraft:bamboo": {
+    "not_eat": 1
+  },
+  "minecraft:sugar_cane": {
+    "sugar": 1
+  },
+  "minecraft:cactus": {
+    "vegetable": 1
+  },
+  "minecraft:turtle_egg": {
+    "egg": 1
+  },
+  "minecraft:sniffer_egg": {
+    "egg": 1
+  },
+  "minecraft:wheat_seed": {
+    "seed": 1
+  },
+  "minecraft:cocoa_beans": {
+    "seed": 1
+  },
+  "minecraft:pumpkin_seeds": {
+    "seed": 1
+  },
+  "minecraft:melon_seeds": {
+    "seed": 1
+  },
+  "minecraft:beetroot_seed": {
+    "seed": 1
+  },
+  "minecraft:melon": {
+    "sugar": 1,
+    "fruit": 2
+  },
+  "minecraft:pumpkin": {
+    "vegetable": 1
+  },
+  "minecraft:ice": {
+    "ice": 1
+  },
+  "minecraft:dandelion": {
+    "vegetable": 1
+  },
+  "minecraft:poppy": {
+    "vegetable": 1
+  },
+  "minecraft:allium": {
+    "vegetable": 1
+  },
+  "minecraft:blue_orchid": {
+    "vegetable": 1
+  },
+  "minecraft:red_tulip": {
+    "vegetable": 1
+  },
+  "minecraft:orange_tulip": {
+    "vegetable": 1
+  },
+  "minecraft:white_tulip": {
+    "vegetable": 1
+  },
+  "minecraft:pink_tulip": {
+    "vegetable": 1
+  }
+}

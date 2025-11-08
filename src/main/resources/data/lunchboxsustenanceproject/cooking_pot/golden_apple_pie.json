@@ -1,0 +1,17 @@
+{
+  "output": "lunchboxsustenanceproject:golden_apple_pie",
+  "output_count": 1,
+  "priority": 50,
+  "conditions": [
+    {
+      "type": "property",
+      "property": "meat",
+      "max": 0.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:golden_apple",
+      "min_count": 1
+    }
+  ]
+}
