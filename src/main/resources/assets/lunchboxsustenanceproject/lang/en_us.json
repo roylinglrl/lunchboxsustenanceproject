@@ -144,5 +144,7 @@
   "jei.tooltip.property_any": "Any Value",
   "jei.tooltip.tag_min_count": "Minimum Required: %s Items",
   "jei.tooltip.priority": "Priority: %s",
-  "jei.tooltip.item_min_count": "Minimum Required: %s Items"
+  "jei.tooltip.item_min_count": "Minimum Required: %s Items",
+  "jei.lunchboxsustenanceproject.food_values.title": "Food Values",
+  "jei.lunchboxsustenanceproject.click_to_see_recipes": "Click to see recipes"
 }

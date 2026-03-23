@@ -167,5 +167,7 @@
   "jei.tooltip.property_any": "任意值",
   "jei.tooltip.tag_min_count": "最少需要: %s 个",
   "jei.tooltip.priority": "优先级: %s",
-  "jei.tooltip.item_min_count": "最少需要: %s 个"
+  "jei.tooltip.item_min_count": "最少需要: %s 个",
+  "jei.lunchboxsustenanceproject.food_values.title": "食物属性",
+  "jei.lunchboxsustenanceproject.click_to_see_recipes": "点击查看配方"
 }
