@@ -8,12 +8,12 @@ import net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener;
 import net.minecraft.util.profiling.ProfilerFiller;
 import net.minecraft.world.item.ItemStack;
 import net.royling.lunchboxsustenanceproject.ItemValue.ItemValues;
+import net.royling.lunchboxsustenanceproject.kubejs.CookingPotRecipeKubeEvent;
+import net.royling.lunchboxsustenanceproject.kubejs.LunchboxEvents;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class CookingPotRecipeLoader extends SimpleJsonResourceReloadListener {
     private static final Logger LOGGER = LogManager.getLogger();
@@ -42,6 +42,19 @@ public class CookingPotRecipeLoader extends SimpleJsonResourceReloadListener {
         loadedRecipes.sort((a, b) -> Integer.compare(b.getPriority(), a.getPriority()));
         this.recipes = loadedRecipes;
         LOGGER.info("Loaded {} cooking pot recipes", recipes.size());
+        this.recipes.sort((a, b) -> Integer.compare(b.getPriority(), a.getPriority()));
+        applyKubeJS();
+    }
+    private void applyKubeJS() {
+        CookingPotRecipeKubeEvent e = new CookingPotRecipeKubeEvent();
+        LunchboxEvents.COOKING_POT_RECIPES.post(e);
+
+        Set<ResourceLocation> toRemove = new HashSet<>(e.removed);
+        this.recipes.removeIf(r -> toRemove.contains(r.getId()));
+        this.recipes.addAll(e.added);
+        this.recipes.sort((a, b) -> Integer.compare(b.getPriority(), a.getPriority()));
+
+        LOGGER.info("[KubeJS] +{} recipes, -{} recipes", e.added.size(), e.removed.size());
     }
 
     public List<CookingPotRecipe> getRecipes() {

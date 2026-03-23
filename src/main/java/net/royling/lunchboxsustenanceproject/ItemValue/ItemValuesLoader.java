@@ -11,10 +11,13 @@ import net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener;
 import net.minecraft.util.profiling.ProfilerFiller;
 import net.minecraft.world.item.Item;
 import net.royling.lunchboxsustenanceproject.LunchboxSustenanceProject;
+import net.royling.lunchboxsustenanceproject.kubejs.FoodValueKubeEvent;
+import net.royling.lunchboxsustenanceproject.kubejs.LunchboxEvents;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.Map;
 
 import static net.royling.lunchboxsustenanceproject.LunchboxSustenanceProject.MODID;
@@ -22,15 +25,11 @@ import static net.royling.lunchboxsustenanceproject.LunchboxSustenanceProject.MO
 public class ItemValuesLoader extends SimpleJsonResourceReloadListener {
     private static final Logger LOGGER = LogManager.getLogger();
 
-    // 明确定义目录名，用于内部访问
     public static final String FOLDER_NAME = "foodvalues";
 
-    // 存储加载的数据：物品ID (ResourceLocation) -> 自定义值 (ItemValues)
     private Map<ResourceLocation, ItemValues> itemValuesCache = ImmutableMap.of();
 
-    // 构造函数：指定加载器的名称 FOLDER_NAME
     public ItemValuesLoader() {
-        // 使用自定义的 Gson 实例
         super(new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create(), FOLDER_NAME);
     }
 
@@ -44,35 +43,15 @@ public class ItemValuesLoader extends SimpleJsonResourceReloadListener {
             JsonObject json = entry.getValue().getAsJsonObject();
 
             try {
-                // 新的JSON结构：每个文件包含多个物品的定义
-                // 文件格式示例：
-                // {
-                //   "minecraft:apple": {
-                //     "nutrition": 4.0,
-                //     "saturation": 0.3
-                //   },
-                //   "minecraft:beef": {
-                //     "nutrition": 3.0,
-                //     "saturation": 0.5,
-                //     "container": "minecraft:bowl"
-                //   }
-                // }
 
-                // 遍历JSON对象中的所有条目，每个条目对应一个物品
                 for (Map.Entry<String, JsonElement> itemEntry : json.entrySet()) {
                     String itemIdStr = itemEntry.getKey();
                     JsonObject itemJson = itemEntry.getValue().getAsJsonObject();
-
-                    // 解析物品ID
                     ResourceLocation itemIdentifier = ResourceLocation.parse(itemIdStr);
-
-                    // 检查物品是否存在
                     if (!BuiltInRegistries.ITEM.containsKey(itemIdentifier)) {
                         LOGGER.warn("Item {} does not exist, skipping food values", itemIdentifier);
                         continue;
                     }
-
-                    // 从物品的JSON对象创建ItemValues
                     ItemValues values = ItemValues.fromJson(itemJson);
                     builder.put(itemIdentifier, values);
                     successCount++;
@@ -93,6 +72,43 @@ public class ItemValuesLoader extends SimpleJsonResourceReloadListener {
                 LOGGER.debug(" - {}: {}", itemId, itemValuesCache.get(itemId));
             }
         }
+        this.itemValuesCache = builder.build();
+        LOGGER.info("Loaded {} item value entries", successCount);
+        applyKubeJS();
+    }
+    private void applyKubeJS() {
+        FoodValueKubeEvent e = new FoodValueKubeEvent();
+        LunchboxEvents.FOOD_VALUES.post(e);   // 触发脚本
+
+        Map<ResourceLocation, ItemValues> cache = new HashMap<>(itemValuesCache);
+
+        // 全量移除
+        e.removals.forEach(cache::remove);
+
+        // 添加/覆盖
+        e.additions.forEach((itemId, props) -> {
+            ItemValues existing = cache.get(itemId);
+            Map<ResourceLocation, Float> merged = existing != null
+                    ? new HashMap<>(existing.getValues()) : new HashMap<>();
+            merged.putAll(props);
+            cache.put(itemId, new ItemValues(merged,
+                    existing != null ? existing.getContainerItem() : null));
+        });
+
+        // 修改（NaN = 删除该属性）
+        e.modifications.forEach((itemId, props) -> {
+            ItemValues existing = cache.get(itemId);
+            if (existing == null) return;
+            Map<ResourceLocation, Float> m = new HashMap<>(existing.getValues());
+            props.forEach((k, v) -> {
+                if (Float.isNaN(v)) m.remove(k);
+                else                m.put(k, v);
+            });
+            cache.put(itemId, new ItemValues(m, existing.getContainerItem()));
+        });
+
+        this.itemValuesCache = ImmutableMap.copyOf(cache);
+        LOGGER.info("[KubeJS] food values applied");
     }
 
     public ItemValues getValues(Item item) {

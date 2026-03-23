@@ -46,6 +46,20 @@ repositories {
         name = "TslatEntityStatus (TES) Maven Repo"
         url = "https://dl.cloudsmith.io/public/tslat/tes/maven/"
     }
+    maven {
+        url "https://maven.latvian.dev/releases"
+        content {
+            includeGroup "dev.latvian.mods"
+            includeGroup "dev.latvian.apps"
+        }
+    }
+
+    maven {
+        url 'https://jitpack.io'
+        content {
+            includeGroup "com.github.rtyley"
+        }
+    }
     // Add here additional repositories if required by some of the dependencies below.
 }
 
@@ -158,6 +172,8 @@ dependencies {
     implementation "curse.maven:create-328085:6641610"
     implementation "curse.maven:appleskin-248787:6616291"
     implementation "curse.maven:food-effect-tooltips-forge-776426:5730649"
+    implementation "dev.latvian.mods:rhino:2101.2.7-build.81"
+    implementation "dev.latvian.mods:kubejs-neoforge:2101.7.2-build.354"
 
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository

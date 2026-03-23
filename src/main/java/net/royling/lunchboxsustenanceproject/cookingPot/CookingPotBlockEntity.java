@@ -42,14 +42,14 @@ import java.util.logging.ErrorManager;
 
 public class CookingPotBlockEntity extends BaseContainerBlockEntity implements WorldlyContainer,ContainerData {
 
-    private static final int[] SLOTS_FOR_UP = new int[]{0, 1, 2, 3}; // 输入槽
-    private static final int[] SLOTS_FOR_DOWN = new int[]{4}; // 输出槽
+    private static final int[] SLOTS_FOR_UP = new int[]{0, 1, 2, 3};
+    private static final int[] SLOTS_FOR_DOWN = new int[]{4};
     private static final Logger LOGGER = LogManager.getLogger();
 
 
     private NonNullList<ItemStack> items = NonNullList.withSize(5, ItemStack.EMPTY);
     private int progress = 0;
-    private int maxProgress = 200; // 10秒 * 20 tick/秒 = 200 ticks
+    private int maxProgress = 200;
     private boolean isCooking = false;
 
     @Override
@@ -77,26 +77,19 @@ public class CookingPotBlockEntity extends BaseContainerBlockEntity implements W
     }
     @Override
     public boolean canPlaceItemThroughFace(int slot, ItemStack stack, @Nullable Direction direction) {
-        // 输出槽不允许放
         if (slot == 4) {
             return false;
         }
-
-        // 输入槽只允许包含食物值的物品
         if (slot >= 0 && slot < 4) {
             return hasItemValues(stack);
         }
-
         return false;
     }
     @Override
     public boolean canPlaceItem(int slot, ItemStack stack) {
-        // 输出槽不允许放
         if (slot == 4) {
             return false;
         }
-
-        // 输入槽只允许包含食物值的物品
         if (slot >= 0 && slot < 4) {
             return hasItemValues(stack);
         }
@@ -107,17 +100,13 @@ public class CookingPotBlockEntity extends BaseContainerBlockEntity implements W
         if (stack.isEmpty()) {
             return false;
         }
-
         ItemValuesLoader valuesLoader = getValuesLoader();
         if (valuesLoader == null) {
             return false;
         }
-
         ItemValues values = valuesLoader.getValues(stack.getItem());
         return values != null && !values.getValues().isEmpty();
     }
-
-
     public CookingPotBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.COOKING_POT.get(), pos, state);
     }
@@ -125,7 +114,6 @@ public class CookingPotBlockEntity extends BaseContainerBlockEntity implements W
     public static void tick(Level level, BlockPos pos, BlockState state, CookingPotBlockEntity blockEntity) {
         if (level.isClientSide) return;
 
-        // 检查是否可以开始烹饪
         if (!blockEntity.isCooking && blockEntity.canStartCooking()) {
             blockEntity.startCooking();
         }

@@ -28,14 +28,12 @@ public class ItemValues {
         for (Map.Entry<String, JsonElement> entry : json.entrySet()) {
             String key = entry.getKey();
 
-            // 检查是否是容器字段
             if ("container".equals(key)) {
                 String containerStr = entry.getValue().getAsString();
                 container = ResourceLocation.parse(containerStr);
                 continue;
             }
 
-            // 处理属性值
             ResourceLocation type;
             if (key.contains(":")) {
                 type = ResourceLocation.parse(key);
